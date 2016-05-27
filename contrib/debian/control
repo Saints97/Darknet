@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.darknet-crypto.com
-Vcs-Git: git://github.com/Darknet-Crypto/Darknet.git
-Vcs-Browser: http://github.com/Darknet-Crypto/Darknet
+Vcs-Git: git://github.com/Saints97/Katana.git
+Vcs-Browser: http://github.com/Saints97/Katana
 
 Package: darknetd
 Architecture: any
