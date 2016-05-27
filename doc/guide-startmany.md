@@ -137,7 +137,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```katanad getinfo```
 
-And compare with the official explorer at http://katanaexplorer.coin-server.com <or> dnet.presstab.pw
+And compare with the official explorer at http://katanaexplorer.coin-server.com <or> katana.presstab.pw
 
 ### Local
 

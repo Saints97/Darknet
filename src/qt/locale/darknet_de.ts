@@ -919,7 +919,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>Bezeichnung, die dem Adresslisteneintrag zugeordnet ist.</translation>
+        <translation>Bezeichnung, die dem Adresslisteneintrag zugeorkatana ist.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -927,7 +927,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Adresse, die dem Adresslisteneintrag zugeordnet ist. Diese kann nur bei Zahlungsadressen verändert werden.</translation>
+        <translation>Adresse, die dem Adresslisteneintrag zugeorkatana ist. Diese kann nur bei Zahlungsadressen verändert werden.</translation>
     </message>
     <message>
         <source>New receiving address</source>
@@ -2043,7 +2043,7 @@ https://www.transifex.com/saints97/katana-wallet-translations/</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation>Eine optionale Bezeichnung, die der neuen Empfangsadresse zugeordnet wird.</translation>
+        <translation>Eine optionale Bezeichnung, die der neuen Empfangsadresse zugeorkatana wird.</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the DarkNet network.</source>
@@ -3758,7 +3758,7 @@ zum Beispiel: alertnotify=echo %%s | mail -s \"DarkNet Alert\" admin@foo.com</tr
     </message>
     <message>
         <source>(51472 could be used only on mainnet)</source>
-        <translation>(51472 kann nur im Standardnetz benutzt werden)</translation>
+        <translation>(51472 kann nur im Standarkatanaz benutzt werden)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4177,7 +4177,7 @@ DarkNet Core wird heruntergefahren.</translation>
     </message>
     <message>
         <source>(must be51472 for mainnet)</source>
-        <translation>(muss für Standardnetz51472 sein)</translation>
+        <translation>(muss für Standarkatanaz51472 sein)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>
