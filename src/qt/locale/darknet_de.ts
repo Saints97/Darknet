@@ -188,7 +188,7 @@
         <translation>Wallet verschlüsselt</translation>
     </message>
     <message>
-        <source>DarkNet will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your darknets from being stolen by malware infecting your computer.</source>
+        <source>DarkNet will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your katanas from being stolen by malware infecting your computer.</source>
         <translation>DarkNet wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Bitte beachten Sie, dass die Wallet-Verschlüsselung nicht vollständig vor Diebstahl ihrer DarkNet durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
@@ -263,8 +263,8 @@
         <translation>&amp;Empfangen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and darknet: URIs)</source>
-        <translation>Zahlungen anfordern (erzeugt QR-Codes und "darknet:"-URIs)</translation>
+        <source>Request payments (generates QR codes and katana: URIs)</source>
+        <translation>Zahlungen anfordern (erzeugt QR-Codes und "katana:"-URIs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -443,8 +443,8 @@
         <translation>&amp;URI öffnen...</translation>
     </message>
     <message>
-        <source>Open a darknet: URI or payment request</source>
-        <translation>Eine "darknet:"-URI oder Zahlungsanforderung öffnen</translation>
+        <source>Open a katana: URI or payment request</source>
+        <translation>Eine "katana:"-URI oder Zahlungsanforderung öffnen</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1262,9 +1262,9 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/saints97/darknet-wallet-translations/</source>
+https://www.transifex.com/saints97/katana-wallet-translations/</source>
         <translation>Fehlt eine Sprache oder ist unvollständig übersetzt? Hier können Sie helfen:
-https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
+https://www.transifex.com/saints97/katana-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1567,7 +1567,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>Fehlerhafte Zahlungsanforderung</translation>
     </message>
     <message>
-        <source>Cannot start darknet: click-to-pay handler</source>
+        <source>Cannot start katana: click-to-pay handler</source>
         <translation>DarkNet kann nicht gestartet werden: click-to-pay handler</translation>
     </message>
     <message>
@@ -2291,7 +2291,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>Wenn die benutzerdefinierten Gebühren auf 1000 duffs gesetzt sind und eine Transaktion hat nur 250 Bytes, dann kostet "pro Kilobyte" nur 250 duffs Gebühren, während "mindestens" 1000 duffs kostet. Transaktionen größer als 1 Kilobyte werden immer pro Kilobyte bezahlt.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for darknet transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for katana transactions than the network can process.</source>
         <translation>Nur die minimalen Gebühren zu zahlen ist völlig ausreichend so lange in einem neuen Block der Blockkette noch genug Platz für neue Transaktionen ist.&lt;br /&gt; Bitte beachten Sie dass wenn dies in der Zukunft nicht mehr der Fall sein sollte Ihre Transaktion eventuell niemals in einen neuen Block aufgenommen werden wird, also niemals bestätigt wird.</translation>
     </message>
     <message>
@@ -2559,8 +2559,8 @@ Dies kann passieren, wenn einige DarkNet aus ihrer Wallet bereits ausgegeben wur
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the darknet: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
-        <translation>Eine an die "darknet:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das DarkNet-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the katana: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
+        <translation>Eine an die "katana:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das DarkNet-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3320,7 +3320,7 @@ Dies kann passieren, wenn einige DarkNet aus ihrer Wallet bereits ausgegeben wur
     </message>
 </context>
 <context>
-    <name>darknet-core</name>
+    <name>katana-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>An die angegebene Adresse binden und immer abhören. Für IPv6 "[Host]:Port"-Schreibweise verwenden</translation>
@@ -3710,10 +3710,10 @@ Dies kann passieren, wenn einige DarkNet aus ihrer Wallet bereits ausgegeben wur
         <translation>Dieses Produkt enthält vom OpenSSL-Projekt entwickelte Software zur Benutzung des OpenSSL Toolkit &lt;https://www.openssl.org/&gt;, kryptographische Software geschrieben von Eric Young und UPnP Software geschrieben von Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use darknetd, or the -server option to darknet-qt, you must set an rpcpassword in the configuration file:
+        <source>To use katanad, or the -server option to katana-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=darknetrpc
+rpcuser=katanarpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3721,10 +3721,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "DarkNet Alert" admin@foo.com
 </source>
-        <translation>Um darknetd (oder darknet-qt mit dem -server Parameter) zu benutzen müssen Sie ein rpcpasswort in dieser Konfigurationsdatei angeben:
+        <translation>Um katanad (oder katana-qt mit dem -server Parameter) zu benutzen müssen Sie ein rpcpasswort in dieser Konfigurationsdatei angeben:
 %s
 Es wird empfohlen das folgende Zufallspasswort zu verwenden:
-rpcuser=darknetrpc
+rpcuser=katanarpc
 rpcpassword=%s
 (Sie müssen sich dieses Passwort nicht merken!)
 Der Benutzername und das Passwort dürfen NICHT identisch sein.

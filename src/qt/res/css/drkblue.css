@@ -700,16 +700,16 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
 border:0;
 }
 
-/* About Darknet Dialog */
+/* About Katana Dialog */
 QDialog#AboutDialog {
 background-color:#F8F6F6;
 }
 
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Darknet Contents */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Katana Contents */
 margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About Darknet text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About Katana text */
 margin-right:10px;
 }
 
@@ -1043,7 +1043,7 @@ min-width:410px;
 margin-right:20px;
 margin-left:0;
 margin-top:0;
-background-image: url(':/images/darknet_logo_horizontal-drkblue');
+background-image: url(':/images/katana_logo_horizontal-drkblue');
 background-repeat:none;
 }
 

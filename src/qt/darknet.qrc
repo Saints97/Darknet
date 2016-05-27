@@ -36,12 +36,12 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_darknet">res/icons/unit_darknet.png</file>
-        <file alias="unit_mdarknet">res/icons/unit_mdarknet.png</file>
-        <file alias="unit_udarknet">res/icons/unit_udarknet.png</file>
-        <file alias="unit_tdarknet">res/icons/unit_tdarknet.png</file>
-        <file alias="unit_tmdarknet">res/icons/unit_tmdarknet.png</file>
-        <file alias="unit_tudarknet">res/icons/unit_tudarknet.png</file>
+        <file alias="unit_katana">res/icons/unit_katana.png</file>
+        <file alias="unit_mkatana">res/icons/unit_mkatana.png</file>
+        <file alias="unit_ukatana">res/icons/unit_ukatana.png</file>
+        <file alias="unit_tkatana">res/icons/unit_tkatana.png</file>
+        <file alias="unit_tmkatana">res/icons/unit_tmkatana.png</file>
+        <file alias="unit_tukatana">res/icons/unit_tukatana.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
@@ -65,9 +65,9 @@
     </qresource>	    
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="darknet_logo_horizontal">res/images/darknet_logo_horizontal.png</file>
-        <file alias="darknet_logo_horizontal-drk">res/images/darknet_logo_horizontal-drk.png</file>
-        <file alias="darknet_logo_horizontal-drkblue">res/images/darknet_logo_horizontal-drkblue.png</file>
+        <file alias="katana_logo_horizontal">res/images/katana_logo_horizontal.png</file>
+        <file alias="katana_logo_horizontal-drk">res/images/katana_logo_horizontal-drk.png</file>
+        <file alias="katana_logo_horizontal-drkblue">res/images/katana_logo_horizontal-drkblue.png</file>
         <file alias="drk_downArrow">res/images/drk_downArrow.png</file>
         <file alias="drk_downArrow_small">res/images/drk_downArrow_small.png</file>
         <file alias="drk_upArrow_small">res/images/drk_upArrow_small.png</file>

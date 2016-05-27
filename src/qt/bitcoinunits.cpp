@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2016 The Darknet developers
+// Copyright (c) 2015-2016 The Katana developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -43,9 +43,9 @@ QString BitcoinUnits::id(int unit)
 {
     switch(unit)
     {
-        case DNET: return QString("darknet");
-        case mDNET: return QString("mdarknet");
-        case uDNET: return QString::fromUtf8("udarknet");
+        case DNET: return QString("katana");
+        case mDNET: return QString("mkatana");
+        case uDNET: return QString::fromUtf8("ukatana");
         default: return QString("???");
     }
 }

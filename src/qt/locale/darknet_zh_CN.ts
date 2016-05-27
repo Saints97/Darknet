@@ -188,7 +188,7 @@
         <translation>钱包已加密</translation>
     </message>
     <message>
-        <source>DarkNet will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your darknets from being stolen by malware infecting your computer.</source>
+        <source>DarkNet will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your katanas from being stolen by malware infecting your computer.</source>
         <translation>达世币软体现在要关闭，以完成加密过程。请注意，加密钱包不能完全防止恶意软件入侵你的电脑盗取你的达世币。</translation>
     </message>
     <message>
@@ -263,7 +263,7 @@
         <translation>接收(&amp;R)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and darknet: URIs)</source>
+        <source>Request payments (generates QR codes and katana: URIs)</source>
         <translation>请求付款(生成二维码和达世币付款协议的URI)</translation>
     </message>
     <message>
@@ -443,7 +443,7 @@
         <translation>打开 &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a darknet: URI or payment request</source>
+        <source>Open a katana: URI or payment request</source>
         <translation>打开达世币：网页或付款请求</translation>
     </message>
     <message>
@@ -1264,9 +1264,9 @@ Address: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/saints97/darknet-wallet-translations/</source>
+https://www.transifex.com/saints97/katana-wallet-translations/</source>
         <translation>缺少相关语言或翻译不完整? 请到这里协助翻译:
-https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
+https://www.transifex.com/saints97/katana-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1561,7 +1561,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>支付请求出错</translation>
     </message>
     <message>
-        <source>Cannot start darknet: click-to-pay handler</source>
+        <source>Cannot start katana: click-to-pay handler</source>
         <translation>无法启动达世币程序：click-to-pay handler</translation>
     </message>
     <message>
@@ -2289,7 +2289,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
 但如果交易信息大于一千字节,那么两者都要支付千字节费用.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for darknet transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for katana transactions than the network can process.</source>
         <translation>当交易量少于区块可容纳的空间时,只需支付最低手续费.&lt;br /&gt;但当交易量的需求增长到超过总体网络可处理的量时,可能会造成一笔一直不被确认的交易.</translation>
     </message>
     <message>
@@ -2552,7 +2552,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>消息：</translation>
     </message>
     <message>
-        <source>A message that was attached to the darknet: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
+        <source>A message that was attached to the katana: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
         <translation>附加在达世币付款协议URI中的信息,会和交易内容一并存储,可供您参考.提示:此信息不会发送到达世币网络上.</translation>
     </message>
     <message>
@@ -3301,7 +3301,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
     </message>
 </context>
 <context>
-    <name>darknet-core</name>
+    <name>katana-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>与提供地址绑定，持续监听。使用[host]:标记IPv6端口</translation>

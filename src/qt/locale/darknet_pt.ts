@@ -188,8 +188,8 @@
         <translation>Carteira cifrada</translation>
     </message>
     <message>
-        <source>DarkNet will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your darknets from being stolen by malware infecting your computer.</source>
-        <translation>O cliente DarkNet irá fechar para finalizar o processo de cifra. Lembre-se que cifrar a sua carteira não consegue proteger totalmente as suas darknets contra roubos feitos por malware presente no seu computador.</translation>
+        <source>DarkNet will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your katanas from being stolen by malware infecting your computer.</source>
+        <translation>O cliente DarkNet irá fechar para finalizar o processo de cifra. Lembre-se que cifrar a sua carteira não consegue proteger totalmente as suas katanas contra roubos feitos por malware presente no seu computador.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -263,8 +263,8 @@
         <translation>&amp;Receber</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and darknet: URIs)</source>
-        <translation>Solicitar pagamentos (gera códigos QR e darknet: URIs)</translation>
+        <source>Request payments (generates QR codes and katana: URIs)</source>
+        <translation>Solicitar pagamentos (gera códigos QR e katana: URIs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -443,8 +443,8 @@
         <translation>Abrir &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a darknet: URI or payment request</source>
-        <translation>Abre um darknet: URI ou solicitação de pagamento</translation>
+        <source>Open a katana: URI or payment request</source>
+        <translation>Abre um katana: URI ou solicitação de pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1259,9 +1259,9 @@ Endereço: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/saints97/darknet-wallet-translations/</source>
+https://www.transifex.com/saints97/katana-wallet-translations/</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude a traduzir aqui:
-https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
+https://www.transifex.com/saints97/katana-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1564,8 +1564,8 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>Erro na solicitação de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start darknet: click-to-pay handler</source>
-        <translation>Não é possível iniciar o darknet: click-to-pay handler</translation>
+        <source>Cannot start katana: click-to-pay handler</source>
+        <translation>Não é possível iniciar o katana: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2543,8 +2543,8 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>Mensagem:</translation>
     </message>
     <message>
-        <source>A message that was attached to the darknet: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
-        <translation>Mensagem que foi anexada ao darknet: URI e que será guardada com a transacção para sua referência. Nota: Esta mensagem não será enviada para a rede DarkNet.</translation>
+        <source>A message that was attached to the katana: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
+        <translation>Mensagem que foi anexada ao katana: URI e que será guardada com a transacção para sua referência. Nota: Esta mensagem não será enviada para a rede DarkNet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3304,7 +3304,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
     </message>
 </context>
 <context>
-    <name>darknet-core</name>
+    <name>katana-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Vincular a um determinado endereço e ouvir sempre aí. Use a notação [endereço]:porta para IPv6</translation>

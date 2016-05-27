@@ -66,7 +66,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/darknet.conf are parsed in qt/darknet.cpp's main()
+    // If Qt is used, parameters/katana.conf are parsed in qt/katana.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -81,7 +81,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  darknetd [options]                     " + _("Start Katana Core Daemon") + "\n";
+                  "  katanad [options]                     " + _("Start Katana Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -120,12 +120,12 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "darknet:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "katana:"))
                 fCommandLine = true;
 
         if (fCommandLine)
         {
-            fprintf(stderr, "Error: There is no RPC client functionality in darknetd anymore. Use the darknet-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in katanad anymore. Use the katana-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
@@ -189,7 +189,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect darknetd signal handlers
+    // Connect katanad signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/darknet-config.h"
+#include "config/katana-config.h"
 #endif
 
 #include "bitcoingui.h"
@@ -91,7 +91,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("darknet-core", psz).toStdString();
+    return QCoreApplication::translate("katana-core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
@@ -139,11 +139,11 @@ static void initTranslations(QTranslator &qtTranslatorBase, QTranslator &qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in darknet.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in katana.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in darknet.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in katana.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -251,7 +251,7 @@ private:
     void startThread();
 };
 
-#include "darknet.moc"
+#include "katana.moc"
 
 BitcoinCore::BitcoinCore():
     QObject()
@@ -546,8 +546,8 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(darknet);
-    Q_INIT_RESOURCE(darknet_locale);
+    Q_INIT_RESOURCE(katana);
+    Q_INIT_RESOURCE(katana_locale);
 
     BitcoinApplication app(argc, argv);
 #if QT_VERSION > 0x050100
@@ -591,7 +591,7 @@ int main(int argc, char *argv[])
     // User language is set up: pick a data directory
     Intro::pickDataDirectory();
 
-    /// 6. Determine availability of data directory and parse darknet.conf
+    /// 6. Determine availability of data directory and parse katana.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false)))
     {
@@ -649,7 +649,7 @@ int main(int argc, char *argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // darknet: links repeatedly have their payment requests routed to this process:
+    // katana: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 

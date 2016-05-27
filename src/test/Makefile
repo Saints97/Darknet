@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. darknet_test
+	$(MAKE) -C .. katana_test
 clean:
-	$(MAKE) -C .. darknet_test_clean
+	$(MAKE) -C .. katana_test_clean
 check:
-	$(MAKE) -C .. darknet_test_check
+	$(MAKE) -C .. katana_test_check

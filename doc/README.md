@@ -17,14 +17,14 @@ You need the Qt4 run-time libraries to run DarkNet-Qt. On Debian or Ubuntu:
 
 Unpack the files into a directory and run:
 
-- bin/32/darknet-qt (GUI, 32-bit) or bin/32/darknetd (headless, 32-bit)
-- bin/64/darknet-qt (GUI, 64-bit) or bin/64/darknetd (headless, 64-bit)
+- bin/32/katana-qt (GUI, 32-bit) or bin/32/katanad (headless, 32-bit)
+- bin/64/katana-qt (GUI, 64-bit) or bin/64/katanad (headless, 64-bit)
 
 
 
 ### Windows
 
-Unpack the files into a directory, and then run darknet-qt.exe.
+Unpack the files into a directory, and then run katana-qt.exe.
 
 ### OSX
 
@@ -46,6 +46,7 @@ The following are developer notes on how to build DarkNet on your native platfor
 
 Development
 ---------------------
+The Katana repo's [root README](https://github.com/saints97/katana/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Coding Guidelines](coding.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

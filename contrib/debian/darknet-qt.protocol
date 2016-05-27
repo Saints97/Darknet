@@ -1,6 +1,6 @@
 [Protocol]
-exec=darknet-qt '%u'
-protocol=darknet
+exec=katana-qt '%u'
+protocol=katana
 input=none
 output=none
 helper=true

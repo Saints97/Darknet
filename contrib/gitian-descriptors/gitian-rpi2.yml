@@ -1,5 +1,5 @@
 ---
-name: "darknet-rpi2-1.1.0.1"
+name: "katana-rpi2-1.1.0.1"
 enable_cache: true
 suites:
 - "precise"
@@ -17,8 +17,8 @@ packages:
 - "binutils-gold"
 reference_datetime: "2014-01-10 00:00:00"
 remotes:
-- "url": "https://github.com/saints97/darknet.git"
-  "dir": "darknet"
+- "url": "https://github.com/saints97/katana.git"
+  "dir": "katana"
 files:
 - "raspberrypi-tools.tar.gz"
 script: |
@@ -67,7 +67,7 @@ script: |
   done
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd darknet
+  cd katana
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -78,13 +78,13 @@ script: |
   ./autogen.sh
   ./configure --prefix=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`
   make NO_QT=1 dist
-  SOURCEDIST=`echo darknet-*.tar.gz`
+  SOURCEDIST=`echo katana-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-  find darknet-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+  find katana-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
   popd
 
   ORIGPATH="$PATH"

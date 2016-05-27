@@ -2,7 +2,7 @@ Release Process
 ====================
 
 * update translations (ping wumpus, Diapolo or tcatm on IRC)
-* see https://github.com/saints97/darknet/blob/master/doc/translation_process.md#syncing-with-transifex
+* see https://github.com/saints97/katana/blob/master/doc/translation_process.md#syncing-with-transifex
 
 * * *
 
@@ -29,11 +29,11 @@ Release Process
 
 ###perform gitian builds
 
- From a directory containing the darknet source, gitian-builder and gitian.sigs
+ From a directory containing the katana source, gitian-builder and gitian.sigs
 
 	export SIGNER=(your gitian key)
 	export VERSION=(new version, e.g. 1.1.0.0)
-	pushd ./darknet
+	pushd ./katana
 	git checkout v${VERSION}
 	popd
 	pushd ./gitian-builder
@@ -62,29 +62,29 @@ Release Process
 
   By default, gitian will fetch source files as needed. For offline builds, they can be fetched ahead of time:
 
-	make -C ../darknet/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../katana/depends download SOURCES_PATH=`pwd`/cache/common
 
   Only missing files will be fetched, so this is safe to re-run for each build.
 
 ###Build DarkNet Core for Linux, Windows, and OS X:
 
-	./bin/gbuild --commit darknet=v${VERSION} ../darknet/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../darknet/contrib/gitian-descriptors/gitian-linux.yml
-	mv build/out/darknet-*.tar.gz build/out/src/darknet-*.tar.gz ../
-	./bin/gbuild --commit darknet=v${VERSION} ../darknet/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../darknet/contrib/gitian-descriptors/gitian-win.yml
-	mv build/out/darknet-*.zip build/out/darknet-*.exe ../
-	./bin/gbuild --commit darknet=v${VERSION} ../darknet/contrib/gitian-descriptors/gitian-osx.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../darknet/contrib/gitian-descriptors/gitian-osx.yml
-	mv build/out/darknet-*-unsigned.tar.gz inputs/darknet-osx-unsigned.tar.gz
-	mv build/out/darknet-*.tar.gz build/out/darknet-*.dmg ../
+	./bin/gbuild --commit katana=v${VERSION} ../katana/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../katana/contrib/gitian-descriptors/gitian-linux.yml
+	mv build/out/katana-*.tar.gz build/out/src/katana-*.tar.gz ../
+	./bin/gbuild --commit katana=v${VERSION} ../katana/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../katana/contrib/gitian-descriptors/gitian-win.yml
+	mv build/out/katana-*.zip build/out/katana-*.exe ../
+	./bin/gbuild --commit katana=v${VERSION} ../katana/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../katana/contrib/gitian-descriptors/gitian-osx.yml
+	mv build/out/katana-*-unsigned.tar.gz inputs/katana-osx-unsigned.tar.gz
+	mv build/out/katana-*.tar.gz build/out/katana-*.dmg ../
 	popd
   Build output expected:
 
-  1. source tarball (darknet-${VERSION}.tar.gz)
-  2. linux 32-bit and 64-bit binaries dist tarballs (darknet-${VERSION}-linux[32|64].tar.gz)
-  3. windows 32-bit and 64-bit installers and dist zips (darknet-${VERSION}-win[32|64]-setup.exe, darknet-${VERSION}-win[32|64].zip)
-  4. OSX unsigned installer (darknet-${VERSION}-osx-unsigned.dmg)
+  1. source tarball (katana-${VERSION}.tar.gz)
+  2. linux 32-bit and 64-bit binaries dist tarballs (katana-${VERSION}-linux[32|64].tar.gz)
+  3. windows 32-bit and 64-bit installers and dist zips (katana-${VERSION}-win[32|64]-setup.exe, katana-${VERSION}-win[32|64].zip)
+  4. OSX unsigned installer (katana-${VERSION}-osx-unsigned.dmg)
   5. Gitian signatures (in gitian.sigs/${VERSION}-<linux|win|osx-unsigned>/(your gitian key)/
 
 ###Next steps:
@@ -108,9 +108,9 @@ Commit your signature to gitian.sigs:
 	pushd ./gitian-builder
 	# Fetch the signature as instructed by Evan
 	cp signature.tar.gz inputs/
-	./bin/gbuild -i ../darknet/contrib/gitian-descriptors/gitian-osx-signer.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../darknet/contrib/gitian-descriptors/gitian-osx-signer.yml
-	mv build/out/darknet-osx-signed.dmg ../darknet-${VERSION}-osx.dmg
+	./bin/gbuild -i ../katana/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../katana/contrib/gitian-descriptors/gitian-osx-signer.yml
+	mv build/out/katana-osx-signed.dmg ../katana-${VERSION}-osx.dmg
 	popd
 
 Commit your signature for the signed OSX binary:

@@ -188,7 +188,7 @@
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-        <source>DarkNet will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your darknets from being stolen by malware infecting your computer.</source>
+        <source>DarkNet will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your katanas from being stolen by malware infecting your computer.</source>
         <translation>DarkNetCoin sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť Vaše mince pred krádežou škodlivým softvérom, ktorý napadol váš počítač.</translation>
     </message>
     <message>
@@ -263,7 +263,7 @@
         <translation>&amp;Prijať</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and darknet: URIs)</source>
+        <source>Request payments (generates QR codes and katana: URIs)</source>
         <translation>Vyžiadať platby (vygeneruje QR kódy a DarkNet: URI)</translation>
     </message>
     <message>
@@ -443,8 +443,8 @@
         <translation>Otvoriť &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a darknet: URI or payment request</source>
-        <translation>Otvoriť darknet: URI alebo žiadosť o platbu </translation>
+        <source>Open a katana: URI or payment request</source>
+        <translation>Otvoriť katana: URI alebo žiadosť o platbu </translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1262,9 +1262,9 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/saints97/darknet-wallet-translations/</source>
+https://www.transifex.com/saints97/katana-wallet-translations/</source>
         <translation>Chýbajúci alebo nekompletný preklad? Pomôžte nám tu:
-https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
+https://www.transifex.com/saints97/katana-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1567,7 +1567,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start darknet: click-to-pay handler</source>
+        <source>Cannot start katana: click-to-pay handler</source>
         <translation>DarkNet sa nedá spustiť: click-to-pay handler</translation>
     </message>
     <message>
@@ -2291,7 +2291,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>Ak je vlastný poplatok nastavený na 1000 duffov a transakcia je len 250 bytov, v tom prípade "za kilobajt" zaplatí iba 250 duffov na poplatkoch, &lt;br /&gt;zatiaľ čo "celkovo pri najmenšom" zaplatí 1000 duffov. Pre transakcie väčšie ako jeden kilobajt, obe zaplatia rovnako za kilobajt. </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for darknet transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for katana transactions than the network can process.</source>
         <translation>Platenie minimálneho poplatku je v poriadku pokiaľ je objem transakcií menší ako je miesto v bloku. &lt;br /&gt;Buďte opatrný pretože to môže skončiť s nikdy nepotvrdenými transakciami, akonáhle je dopyt po DarkNet transakciách väčší ako dokáže sieť DarkNet spracovať.</translation>
     </message>
     <message>
@@ -2558,8 +2558,8 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>Správa:</translation>
     </message>
     <message>
-        <source>A message that was attached to the darknet: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
-        <translation>Správa ktorá bola pripojená ku darknet: URI ktorá sa uchová spolu s transakciou pre Vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť DarkNet.</translation>
+        <source>A message that was attached to the katana: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
+        <translation>Správa ktorá bola pripojená ku katana: URI ktorá sa uchová spolu s transakciou pre Vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť DarkNet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3319,7 +3319,7 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
     </message>
 </context>
 <context>
-    <name>darknet-core</name>
+    <name>katana-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
@@ -3709,10 +3709,10 @@ https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
         <translation>Tento produkt obsahuje softvér vyvinutý projektom OpenSSL pre použitie sady nástrojov OpenSSL &lt;https://www.openssl.org/&gt; a kryptografického softvéru napísaného Eric Young a UPnP softvér napísaný Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use darknetd, or the -server option to darknet-qt, you must set an rpcpassword in the configuration file:
+        <source>To use katanad, or the -server option to katana-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=darknetrpc
+rpcuser=katanarpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3720,10 +3720,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "DarkNet Alert" admin@foo.com
 </source>
-        <translation>Pre použitie možnosti -server pre darknet-qt, musíte nastaviť rpcpassword v konfiguračnom súbore:
+        <translation>Pre použitie možnosti -server pre katana-qt, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
 Doporučuje sa použiť nasledovné náhodné heslo:
-rpcuser=darknetrpc
+rpcuser=katanarpc
 rpcpassword=%s
 (toto heslo si nemusíte pamätať)
 Používateľské meno a heslo NEMÔŽU byť rovnaké.

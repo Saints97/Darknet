@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/darknet-config.h \
+           src/katana-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/darknet-config.h \
+           src/config/katana-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/darknet.moc \
+           src/qt/katana.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -374,9 +374,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/darknet-cli.cpp \
-           src/darknet-tx.cpp \
-           src/darknetd.cpp \
+           src/katana-cli.cpp \
+           src/katana-tx.cpp \
+           src/katanad.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,8 +471,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/darknet.cpp \
-           src/qt/darknetstrings.cpp \
+           src/qt/katana.cpp \
+           src/qt/katanastrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_darknet.cpp \
+           src/test/test_katana.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,20 +641,20 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/darknet.qrc src/qt/darknet_locale.qrc
-TRANSLATIONS += src/qt/locale/darknet_bg.ts \
-                src/qt/locale/darknet_de.ts \
-                src/qt/locale/darknet_en.ts \
-                src/qt/locale/darknet_es.ts \
-                src/qt/locale/darknet_fi.ts \
-                src/qt/locale/darknet_fr.ts \
-                src/qt/locale/darknet_it.ts \
-                src/qt/locale/darknet_ja.ts \
-                src/qt/locale/darknet_pl.ts \
-                src/qt/locale/darknet_pt.ts \
-                src/qt/locale/darknet_ru.ts \
-                src/qt/locale/darknet_sk.ts \
-                src/qt/locale/darknet_sv.ts \
-                src/qt/locale/darknet_vi.ts \
-                src/qt/locale/darknet_zh_CN.ts \
-                src/qt/locale/darknet_zh_TW.ts
+RESOURCES += src/qt/katana.qrc src/qt/katana_locale.qrc
+TRANSLATIONS += src/qt/locale/katana_bg.ts \
+                src/qt/locale/katana_de.ts \
+                src/qt/locale/katana_en.ts \
+                src/qt/locale/katana_es.ts \
+                src/qt/locale/katana_fi.ts \
+                src/qt/locale/katana_fr.ts \
+                src/qt/locale/katana_it.ts \
+                src/qt/locale/katana_ja.ts \
+                src/qt/locale/katana_pl.ts \
+                src/qt/locale/katana_pt.ts \
+                src/qt/locale/katana_ru.ts \
+                src/qt/locale/katana_sk.ts \
+                src/qt/locale/katana_sv.ts \
+                src/qt/locale/katana_vi.ts \
+                src/qt/locale/katana_zh_CN.ts \
+                src/qt/locale/katana_zh_TW.ts

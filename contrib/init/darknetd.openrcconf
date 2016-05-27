@@ -1,25 +1,25 @@
-# /etc/conf.d/darknetd: config file for /etc/init.d/darknetd
+# /etc/conf.d/katanad: config file for /etc/init.d/katanad
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/darknet/darknet.conf"
+#BITCOIND_CONFIGFILE="/etc/katana/katana.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/darknetd"
+#BITCOIND_PIDDIR="/var/run/katanad"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/darknetd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/katanad.pid"
 
-# Where to write darknetd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/darknetd"
+# Where to write katanad data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/katanad"
 
-# User and group to own darknetd process
-#BITCOIND_USER="darknet"
-#BITCOIND_GROUP="darknet"
+# User and group to own katanad process
+#BITCOIND_USER="katana"
+#BITCOIND_GROUP="katana"
 
-# Path to darknetd executable
-#BITCOIND_BIN="/usr/bin/darknetd"
+# Path to katanad executable
+#BITCOIND_BIN="/usr/bin/katanad"
 
-# Nice value to run darknetd under
+# Nice value to run katanad under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

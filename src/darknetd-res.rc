@@ -19,10 +19,10 @@ BEGIN
             VALUE "CompanyName",        "DarkNet"
             VALUE "FileDescription",    "DarkNetd (OSS daemon/client for Katana)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "darknetd"
+            VALUE "InternalName",       "katanad"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "darknetd.exe"
+            VALUE "OriginalFilename",   "katanad.exe"
             VALUE "ProductName",        "DarkNetd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

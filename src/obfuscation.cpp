@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2016 The Darknet developers
+// Copyright (c) 2015-2016 The Katana developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -37,7 +37,7 @@ map<uint256, CObfuscationBroadcastTx> mapObfuscationBroadcastTxes;
 CActiveMasternode activeMasternode;
 
 /* *** BEGIN OBFUSCATION MAGIC - DNET **********
-    Copyright (c) 2015-2016, Darknet Developers
+    Copyright (c) 2015-2016, Katana Developers
 */
 
 void CObfuscationPool::ProcessMessageObfuscation(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
@@ -1409,7 +1409,7 @@ bool CObfuscationPool::DoAutomaticDenominating(bool fDryRun)
         // should have some additional amount for them
         nLowestDenom += OBFUSCATION_COLLATERAL*4;
 
-    CAmount nBalanceNeedsAnonymized = nAnonymizeDarknetAmount*COIN - pwalletMain->GetAnonymizedBalance();
+    CAmount nBalanceNeedsAnonymized = nAnonymizeKatanaAmount*COIN - pwalletMain->GetAnonymizedBalance();
 
     // if balanceNeedsAnonymized is more than pool max, take the pool max
     if(nBalanceNeedsAnonymized > OBFUSCATION_POOL_MAX) nBalanceNeedsAnonymized = OBFUSCATION_POOL_MAX;
@@ -2223,7 +2223,7 @@ void ThreadCheckObfuscationPool()
     if(fLiteMode) return; //disable all Obfuscation/Masternode related functionality
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("darknet-obfuscation");
+    RenameThread("katana-obfuscation");
 
     unsigned int c = 0;
 

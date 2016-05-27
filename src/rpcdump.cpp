@@ -75,10 +75,10 @@ Value importprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
-            "importprivkey \"darknetprivkey\" ( \"label\" rescan )\n"
+            "importprivkey \"katanaprivkey\" ( \"label\" rescan )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n"
             "\nArguments:\n"
-            "1. \"darknetprivkey\"   (string, required) The private key (see dumpprivkey)\n"
+            "1. \"katanaprivkey\"   (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
             "\nNote: This call can take minutes to complete if rescan is true.\n"
@@ -311,11 +311,11 @@ Value dumpprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey \"darknetaddress\"\n"
-            "\nReveals the private key corresponding to 'darknetaddress'.\n"
+            "dumpprivkey \"katanaaddress\"\n"
+            "\nReveals the private key corresponding to 'katanaaddress'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"darknetaddress\"   (string, required) The darknet address for the private key\n"
+            "1. \"katanaaddress\"   (string, required) The katana address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n"

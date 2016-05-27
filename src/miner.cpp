@@ -458,7 +458,7 @@ void static BitcoinMiner(CWallet *pwallet)
 {
     LogPrintf("DarkNetMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("darknet-miner");
+    RenameThread("katana-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

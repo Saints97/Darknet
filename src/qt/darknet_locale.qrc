@@ -1,20 +1,20 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource prefix="/translations">
-        <file alias="bg">locale/darknet_bg.qm</file>
-        <file alias="de">locale/darknet_de.qm</file>
-        <file alias="en">locale/darknet_en.qm</file>
-        <file alias="es">locale/darknet_es.qm</file>
-        <file alias="fi">locale/darknet_fi.qm</file>
-        <file alias="fr">locale/darknet_fr.qm</file>
-        <file alias="it">locale/darknet_it.qm</file>
-        <file alias="it">locale/darknet_ja.qm</file>
-        <file alias="pl">locale/darknet_pl.qm</file>
-        <file alias="pt">locale/darknet_pt.qm</file>
-        <file alias="ru">locale/darknet_ru.qm</file>
-        <file alias="sk">locale/darknet_sk.qm</file>
-        <file alias="sv">locale/darknet_sv.qm</file>
-        <file alias="vi">locale/darknet_vi.qm</file>
-        <file alias="zh_CN">locale/darknet_zh_CN.qm</file>
-        <file alias="zh_TW">locale/darknet_zh_TW.qm</file>
+        <file alias="bg">locale/katana_bg.qm</file>
+        <file alias="de">locale/katana_de.qm</file>
+        <file alias="en">locale/katana_en.qm</file>
+        <file alias="es">locale/katana_es.qm</file>
+        <file alias="fi">locale/katana_fi.qm</file>
+        <file alias="fr">locale/katana_fr.qm</file>
+        <file alias="it">locale/katana_it.qm</file>
+        <file alias="it">locale/katana_ja.qm</file>
+        <file alias="pl">locale/katana_pl.qm</file>
+        <file alias="pt">locale/katana_pt.qm</file>
+        <file alias="ru">locale/katana_ru.qm</file>
+        <file alias="sk">locale/katana_sk.qm</file>
+        <file alias="sv">locale/katana_sv.qm</file>
+        <file alias="vi">locale/katana_vi.qm</file>
+        <file alias="zh_CN">locale/katana_zh_CN.qm</file>
+        <file alias="zh_TW">locale/katana_zh_TW.qm</file>
     </qresource>
 </RCC>

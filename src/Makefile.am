@@ -60,15 +60,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += darknetd
+  bin_PROGRAMS += katanad
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += darknet-cli darknet-tx
+  bin_PROGRAMS += katana-cli katana-tx
 endif
 
 .PHONY: FORCE
-# darknet core #
+# katana core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -170,7 +170,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between darknetd and darknet-qt
+# server: shared between katanad and katana-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -202,7 +202,7 @@ libbitcoin_server_a_SOURCES = \
   $(JSON_H) \
   $(BITCOIN_CORE_H)
 
-# wallet: shared between darknetd and darknet-qt, but only linked
+# wallet: shared between katanad and katana-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_SOURCES = \
@@ -268,7 +268,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between darknetd, and darknet-qt and non-server tools
+# common: shared between katanad, and katana-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -323,7 +323,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between darknet-cli and darknet-qt
+# cli: shared between katana-cli and katana-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -333,7 +333,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-darknetd_LDADD = \
+katanad_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -344,36 +344,36 @@ darknetd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_WALLET
-darknetd_LDADD += libbitcoin_wallet.a
+katanad_LDADD += libbitcoin_wallet.a
 endif
-darknetd_SOURCES = darknetd.cpp
+katanad_SOURCES = katanad.cpp
 #
 
 if TARGET_WINDOWS
-darknetd_SOURCES += darknetd-res.rc
+katanad_SOURCES += katanad-res.rc
 endif
 
-darknetd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-darknetd_CPPFLAGS = $(BITCOIN_INCLUDES)
-darknetd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+katanad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+katanad_CPPFLAGS = $(BITCOIN_INCLUDES)
+katanad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# darknet-cli binary #
-darknet_cli_LDADD = \
+# katana-cli binary #
+katana_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-darknet_cli_SOURCES = \
-  darknet-cli.cpp
+katana_cli_SOURCES = \
+  katana-cli.cpp
 
-darknet_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+katana_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# darknet-tx binary #
-darknet_tx_LDADD = \
+# katana-tx binary #
+katana_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -382,15 +382,15 @@ darknet_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-darknet_tx_SOURCES = darknet-tx.cpp
-darknet_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+katana_tx_SOURCES = katana-tx.cpp
+katana_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-darknet_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+katana_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-darknet_cli_SOURCES += darknet-cli-res.rc
+katana_cli_SOURCES += katana-cli-res.rc
 endif
-darknet_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+katana_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

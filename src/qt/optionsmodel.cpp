@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/darknet-config.h"
+#include "config/katana-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -75,11 +75,11 @@ void OptionsModel::Init()
     if (!settings.contains("nObfuscationRounds"))
         settings.setValue("nObfuscationRounds", 2);
 
-    if (!settings.contains("nAnonymizeDarknetAmount"))
-        settings.setValue("nAnonymizeDarknetAmount", 1000);
+    if (!settings.contains("nAnonymizeKatanaAmount"))
+        settings.setValue("nAnonymizeKatanaAmount", 1000);
 
     nObfuscationRounds = settings.value("nObfuscationRounds").toLongLong();
-    nAnonymizeDarknetAmount = settings.value("nAnonymizeDarknetAmount").toLongLong();
+    nAnonymizeKatanaAmount = settings.value("nAnonymizeKatanaAmount").toLongLong();
 
     // These are shared with the core or have a command-line parameter
     // and we want command-line parameters to overwrite the GUI settings.
@@ -142,7 +142,7 @@ void OptionsModel::Init()
     if (settings.contains("nObfuscationRounds"))
         SoftSetArg("-obfuscationrounds", settings.value("nObfuscationRounds").toString().toStdString());
     if (settings.contains("nAnonymizeDarkNetAmount"))
-        SoftSetArg("-anonymizedarknetamount", settings.value("nAnonymizeDarkNetAmount").toString().toStdString());
+        SoftSetArg("-anonymizekatanaamount", settings.value("nAnonymizeDarkNetAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -153,7 +153,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in darknet.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in katana.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -222,8 +222,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return settings.value("nThreadsScriptVerif");
         case ObfuscationRounds:
             return QVariant(nObfuscationRounds);
-        case AnonymizeDarknetAmount:
-            return QVariant(nAnonymizeDarknetAmount);
+        case AnonymizeKatanaAmount:
+            return QVariant(nAnonymizeKatanaAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -330,10 +330,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             settings.setValue("nObfuscationRounds", nObfuscationRounds);
             emit obfuscationRoundsChanged(nObfuscationRounds);
             break;
-        case AnonymizeDarknetAmount:
-            nAnonymizeDarknetAmount = value.toInt();
-            settings.setValue("nAnonymizeDarknetAmount", nAnonymizeDarknetAmount);
-            emit anonymizeDarknetAmountChanged(nAnonymizeDarknetAmount);
+        case AnonymizeKatanaAmount:
+            nAnonymizeKatanaAmount = value.toInt();
+            settings.setValue("nAnonymizeKatanaAmount", nAnonymizeKatanaAmount);
+            emit anonymizeKatanaAmountChanged(nAnonymizeKatanaAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

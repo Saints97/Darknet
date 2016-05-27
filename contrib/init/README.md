@@ -1,9 +1,9 @@
 Sample configuration files for:
 
-SystemD: darknetd.service
-Upstart: darknetd.conf
-OpenRC:  darknetd.openrc
-         darknetd.openrcconf
+SystemD: katanad.service
+Upstart: katanad.conf
+OpenRC:  katanad.openrc
+         katanad.openrcconf
 
 have been made available to assist packagers in creating node packages here.
 

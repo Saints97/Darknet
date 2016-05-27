@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between darknet-cli and darknetd)
+ * CBaseChainParams defines the base parameters (shared between katana-cli and katanad)
  * of a given instance of the Katana system.
  */
 class CBaseChainParams

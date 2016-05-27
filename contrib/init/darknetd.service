@@ -3,13 +3,13 @@ Description=Katana's distributed currency daemon
 After=network.target
 
 [Service]
-User=darknet
-Group=darknet
+User=katana
+Group=katana
 
 Type=forking
-PIDFile=/var/lib/darknetd/darknetd.pid
-ExecStart=/usr/bin/darknetd -daemon -pid=/var/lib/darknetd/darknetd.pid \
--conf=/etc/darknet/darknet.conf -datadir=/var/lib/darknetd -disablewallet
+PIDFile=/var/lib/katanad/katanad.pid
+ExecStart=/usr/bin/katanad -daemon -pid=/var/lib/katanad/katanad.pid \
+-conf=/etc/katana/katana.conf -datadir=/var/lib/katanad -disablewallet
 
 Restart=always
 PrivateTmp=true
