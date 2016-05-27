@@ -1587,9 +1587,9 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</source>
+https://www.transifex.com/saints97/darknet-wallet-translations/</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</translation>
+https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
     </message>
     <message>
         <location line="+19"/>

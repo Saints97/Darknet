@@ -35,7 +35,7 @@ Drag DarkNet-Qt to your applications folder, and then run DarkNet-Qt.
 * See the documentation at the [DarkNet Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
 * Ask for help on https://bitcointalk.org/index.php?topic=1262920.0
-* A new forum will be available soon on darknet-crypto.com
+* A new forum will be available soon on saints97.com
 
 Building
 ---------------------
@@ -46,7 +46,6 @@ The following are developer notes on how to build DarkNet on your native platfor
 
 Development
 ---------------------
-The Darknet repo's [root README](https://github.com/darknet-crypto/darknet/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Coding Guidelines](coding.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

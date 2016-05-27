@@ -2,7 +2,7 @@ Release Process
 ====================
 
 * update translations (ping wumpus, Diapolo or tcatm on IRC)
-* see https://github.com/darknet-crypto/darknet/blob/master/doc/translation_process.md#syncing-with-transifex
+* see https://github.com/saints97/darknet/blob/master/doc/translation_process.md#syncing-with-transifex
 
 * * *
 
@@ -52,11 +52,11 @@ Release Process
 
  Or you can download it from our website;
  
- 	http://darknet-crypto.com/files/sdk/MacOSX10.7.sdk.tar.gz
+ 	http://saints97.com/files/sdk/MacOSX10.7.sdk.tar.gz
  	
  If you will be building the RPi2 binary as well, you will need this file in 'gitian-builder/inputs' folder
  
- 	http://darknet-crypto.com/files/sdk/raspberrypi-tools.tar.gz
+ 	http://saints97.com/files/sdk/raspberrypi-tools.tar.gz
  	
 ###Optional: Seed the Gitian sources cache
 

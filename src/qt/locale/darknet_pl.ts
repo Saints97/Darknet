@@ -1207,7 +1207,7 @@ Adres: %4
     </message>
     <message>
         <source>Automatically open the DarkNet client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie uruchamiaj port klienta Darkneta na ruterze. To działa tylko jeśli twój ruter wspiera  i ma włączone UPnP.</translation>
+        <translation>Automatycznie uruchamiaj port klienta Katanaa na ruterze. To działa tylko jeśli twój ruter wspiera  i ma włączone UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1263,9 +1263,9 @@ Adres: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</source>
+https://www.transifex.com/saints97/darknet-wallet-translations/</source>
         <translation>DarkNet Core nie został przetłumaczony na twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
-https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</translation>
+https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1765,7 +1765,7 @@ https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</translati
     </message>
     <message>
         <source>Open the DarkNet debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otwiera plik z zapisami debugowania Darkneta z obecnego katalogu. Może to potrfać kilka sekund w zależności od rozmiaru pliku.</translation>
+        <translation>Otwiera plik z zapisami debugowania Katanaa z obecnego katalogu. Może to potrfać kilka sekund w zależności od rozmiaru pliku.</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1973,7 +1973,7 @@ https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</translati
     </message>
     <message>
         <source>Welcome to the DarkNet RPC console.</source>
-        <translation>Witaj w konsoli RPC Darkneta</translation>
+        <translation>Witaj w konsoli RPC Katanaa</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2560,7 +2560,7 @@ https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</translati
     </message>
     <message>
         <source>A message that was attached to the darknet: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the DarkNet network.</source>
-        <translation>Wiadomość, która została dołączona do darknet: Link, który zostanie zapisany wraz z transakcją do wglądu w przyszłości. Zauważ. że sama wiadomość nie zostanie wysłana przez sieć Darkneta.</translation>
+        <translation>Wiadomość, która została dołączona do darknet: Link, który zostanie zapisany wraz z transakcją do wglądu w przyszłości. Zauważ. że sama wiadomość nie zostanie wysłana przez sieć Katanaa.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

@@ -463,7 +463,7 @@ std::string LicenseInfo()
            "\n" +
            FormatParagraph(strprintf(_("Copyright (C) 2014-%i The Dash Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
-           FormatParagraph(strprintf(_("Copyright (C) 2015-%i The Darknet Core Developers"), COPYRIGHT_YEAR)) + "\n" +
+           FormatParagraph(strprintf(_("Copyright (C) 2015-%i The Katana Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
            FormatParagraph(_("This is experimental software.")) + "\n" +
            "\n" +
@@ -1536,9 +1536,9 @@ bool AppInit2(boost::thread_group& threadGroup)
         nObfuscationRounds = 99999;
     }
 
-    nAnonymizeDarknetAmount = GetArg("-anonymizedarknetamount", 0);
-    if(nAnonymizeDarknetAmount > 999999) nAnonymizeDarknetAmount = 999999;
-    if(nAnonymizeDarknetAmount < 2) nAnonymizeDarknetAmount = 2;
+    nAnonymizeKatanaAmount = GetArg("-anonymizedarknetamount", 0);
+    if(nAnonymizeKatanaAmount > 999999) nAnonymizeKatanaAmount = 999999;
+    if(nAnonymizeKatanaAmount < 2) nAnonymizeKatanaAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1553,7 +1553,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
     LogPrintf("Obfuscation rounds %d\n", nObfuscationRounds);
-    LogPrintf("Anonymize DarkNet Amount %d\n", nAnonymizeDarknetAmount);
+    LogPrintf("Anonymize DarkNet Amount %d\n", nAnonymizeKatanaAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations

@@ -13,7 +13,7 @@ static const int MODEL_UPDATE_DELAY = 250;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* DarknetGUI -- Size of icons in status bar */
+/* KatanaGUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 /* Invalid field background style */
@@ -47,7 +47,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "DarkNet"
-#define QAPP_ORG_DOMAIN "darknet-crypto.com"
+#define QAPP_ORG_DOMAIN "saints97.com"
 #define QAPP_APP_NAME_DEFAULT "DarkNet-Qt"
 #define QAPP_APP_NAME_TESTNET "DarkNet-Qt-testnet"
 

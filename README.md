@@ -1,5 +1,5 @@
 DarkNet Repository (Version 1.1.0.1)
-More information at darknet-crypto.com
+More information at saints97.com
 Visit our ANN thread at bitcointalk.org/index.php?topic=1262920
 
 Coin specs:

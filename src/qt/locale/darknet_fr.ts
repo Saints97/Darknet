@@ -1263,9 +1263,9 @@ Adresse : %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</source>
+https://www.transifex.com/saints97/darknet-wallet-translations/</source>
         <translation>Langage manquant ou traduction incomplète ? Participez aux traductions ici :
-https://www.transifex.com/darknet-crypto/darknet-wallet-translations/</translation>
+https://www.transifex.com/saints97/darknet-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
