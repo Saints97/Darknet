@@ -77,10 +77,10 @@ QT_TRANSLATE_NOOP("katana-core", ""
 "Execute command when the best block changes (%s in cmd is replaced by block "
 "hash)"),
 QT_TRANSLATE_NOOP("katana-core", ""
-"Fees (in DNET/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in KATANA/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("katana-core", ""
-"Fees (in DNET/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in KATANA/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("katana-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -167,10 +167,10 @@ QT_TRANSLATE_NOOP("katana-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("katana-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this transaction "
-"that are not equal 1000 DNET."),
+"that are not equal 1000 KATANA."),
 QT_TRANSLATE_NOOP("katana-core", ""
 "Unable to locate enough funds for this transaction that are not equal 1000 "
-"DNET."),
+"KATANA."),
 QT_TRANSLATE_NOOP("katana-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -270,7 +270,7 @@ QT_TRANSLATE_NOOP("katana-core", "Error: Wallet locked, unable to create transac
 QT_TRANSLATE_NOOP("katana-core", "Error: You already have pending entries in the Obfuscation pool"),
 QT_TRANSLATE_NOOP("katana-core", "Failed to listen on any port. Use -listen=0 if you want this."),
 QT_TRANSLATE_NOOP("katana-core", "Failed to read block"),
-QT_TRANSLATE_NOOP("katana-core", "Fee (in DNET/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("katana-core", "Fee (in KATANA/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("katana-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("katana-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("katana-core", "Found enough users, signing ( waiting %s )"),
@@ -303,7 +303,7 @@ QT_TRANSLATE_NOOP("katana-core", "Invalid private key."),
 QT_TRANSLATE_NOOP("katana-core", "Invalid script detected."),
 QT_TRANSLATE_NOOP("katana-core", "KeePassHttp id for the established association"),
 QT_TRANSLATE_NOOP("katana-core", "KeePassHttp key for AES encrypted communication with KeePass"),
-QT_TRANSLATE_NOOP("katana-core", "Keep N DNET anonymized (default: %u)"),
+QT_TRANSLATE_NOOP("katana-core", "Keep N KATANA anonymized (default: %u)"),
 QT_TRANSLATE_NOOP("katana-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
 QT_TRANSLATE_NOOP("katana-core", "Last Obfuscation was too recent."),
 QT_TRANSLATE_NOOP("katana-core", "Last successful Obfuscation action was too recent."),

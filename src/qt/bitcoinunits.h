@@ -58,9 +58,9 @@ public:
      */
     enum Unit
     {
-        DNET,
-        mDNET,
-	uDNET
+        KATANA,
+        mKATANA,
+	uKATANA
     };
 
     enum SeparatorStyle

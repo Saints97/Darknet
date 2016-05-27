@@ -32,7 +32,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::DNET)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::KATANA)
     {
 
     }
@@ -280,7 +280,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("DNET")
+    // update the display unit, to not use the default ("KATANA")
     updateDisplayUnit();
 }
 

@@ -82,10 +82,10 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     }
     
     /* Theme selector */
-    ui->theme->addItem(QString("DNET-dark"), QVariant("drk"));
-    ui->theme->addItem(QString("DNET-dark-1"), QVariant("drk-1"));
-    ui->theme->addItem(QString("DNET-blue"), QVariant("drkblue"));
-    ui->theme->addItem(QString("DNET-traditional"), QVariant("trad"));
+    ui->theme->addItem(QString("KATANA-dark"), QVariant("drk"));
+    ui->theme->addItem(QString("KATANA-dark-1"), QVariant("drk-1"));
+    ui->theme->addItem(QString("KATANA-blue"), QVariant("drkblue"));
+    ui->theme->addItem(QString("KATANA-traditional"), QVariant("trad"));
 
     
     /* Language selector */

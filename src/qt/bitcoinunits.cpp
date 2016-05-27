@@ -20,9 +20,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(DNET);
-    unitlist.append(mDNET);
-    unitlist.append(uDNET);
+    unitlist.append(KATANA);
+    unitlist.append(mKATANA);
+    unitlist.append(uKATANA);
     return unitlist;
 }
 
@@ -30,9 +30,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case DNET:
-    case mDNET:
-    case uDNET:
+    case KATANA:
+    case mKATANA:
+    case uKATANA:
         return true;
     default:
         return false;
@@ -43,9 +43,9 @@ QString BitcoinUnits::id(int unit)
 {
     switch(unit)
     {
-        case DNET: return QString("katana");
-        case mDNET: return QString("mkatana");
-        case uDNET: return QString::fromUtf8("ukatana");
+        case KATANA: return QString("katana");
+        case mKATANA: return QString("mkatana");
+        case uKATANA: return QString::fromUtf8("ukatana");
         default: return QString("???");
     }
 }
@@ -56,9 +56,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DNET: return QString("DNET");
-            case mDNET: return QString("mDNET");
-            case uDNET: return QString::fromUtf8("μDNET");
+            case KATANA: return QString("KATANA");
+            case mKATANA: return QString("mKATANA");
+            case uKATANA: return QString::fromUtf8("μKATANA");
             default: return QString("???");
         }
     }
@@ -66,9 +66,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DNET: return QString("tDNET");
-            case mDNET: return QString("mtDNET");
-            case uDNET: return QString::fromUtf8("μtDNET");
+            case KATANA: return QString("tKATANA");
+            case mKATANA: return QString("mtKATANA");
+            case uKATANA: return QString::fromUtf8("μtKATANA");
             default: return QString("???");
         }
     }
@@ -80,9 +80,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DNET: return QString("DNET");
-            case mDNET: return QString("Milli-DNET (1 / 1" THIN_SP_UTF8 "000)");
-            case uDNET: return QString("Micro-DNET (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case KATANA: return QString("KATANA");
+            case mKATANA: return QString("Milli-KATANA (1 / 1" THIN_SP_UTF8 "000)");
+            case uKATANA: return QString("Micro-KATANA (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -90,9 +90,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DNET: return QString("TestDNETs");
-            case mDNET: return QString("Milli-TestDNET (1 / 1" THIN_SP_UTF8 "000)");
-            case uDNET: return QString("Micro-TestDNET (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case KATANA: return QString("TestKATANAs");
+            case mKATANA: return QString("Milli-TestKATANA (1 / 1" THIN_SP_UTF8 "000)");
+            case uKATANA: return QString("Micro-TestKATANA (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -102,9 +102,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case DNET:  return 100000000;
-    case mDNET: return 100000;
-    case uDNET: return 100;
+    case KATANA:  return 100000000;
+    case mKATANA: return 100000;
+    case uKATANA: return 100;
     default:   return 100000000;
     }
 }
@@ -113,9 +113,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case DNET: return 8;
-    case mDNET: return 5;
-    case uDNET: return 2;
+    case KATANA: return 8;
+    case mKATANA: return 5;
+    case uKATANA: return 2;
     default: return 0;
     }
 }
